@@ -1,0 +1,10 @@
+Here are some Drawback of Array's
+
+size of the array has to defined during initialization
+Example : int[] arr= new int[3];
+
+
+
+one cannot create array of different data type
+like string, int , char inside a single array is not possible.
+

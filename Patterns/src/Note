@@ -1,0 +1,10 @@
+Steps to remember while solving Patterns Questions.
+
+Patterns are not generally asked in interview but they help understand loops.
+
+To master loops, one should practice Pattern Questions.
+
+Step1: for the outer loop, count the no of lines.
+Step2: for the inner loop, focus on the columns, and connect them somehow to the rows.
+Step3: print '*' inside the inner loop.
+Step4: Observe Symmetry [Optional].
