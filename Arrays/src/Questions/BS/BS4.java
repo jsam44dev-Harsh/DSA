@@ -1,14 +1,18 @@
 package Questions.BS;
-
 import java.util.Arrays;
 import java.util.List;
 
+// Question: First and last occurrence
+
 public class BS4 {
+    private BS1 obj = new BS1();
+    private BS2 obj2 = new BS2();
     public static void main(String[] args) {
         BS4 obj = new BS4();
         int[] arr={1,2,3};
         int x=3;
         System.out.println(obj.firstAndLastOccurrence(arr,x));
+        System.out.println("Optimal: "     + obj.Optimal(arr, x));
     }
     // BruteForce
     public List<Integer> firstAndLastOccurrence(int[] arr, int x) {
@@ -27,4 +31,17 @@ public class BS4 {
         // Time complexity: O(n)
         // Space complexity: O(1)
     }
+
+//    Optimal Approach
+    public List<Integer> Optimal(int[] arr, int x) {
+
+        int lb= obj.LowerBound(arr,x);
+        if(lb==arr.length || arr[lb]!=x){
+            return Arrays.asList(-1,-1);
+        }
+        return Arrays.asList(lb,obj2.UpperBound(arr,x)-1);
+        // Time Complexity: 2 * (O(log n) base 2)
+        // Space Complexity: O(1)
+    }
+
 }

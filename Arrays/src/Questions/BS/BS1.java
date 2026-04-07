@@ -14,8 +14,8 @@ package Questions.BS;
 public class BS1 {
     public static void main(String[] args) {
         BS1 obj= new BS1();
-        int[] arr = {3, 5, 8, 15, 19}; // Sorted array
-        int x = 9;
+        int[] arr = {3, 8, 8, 8, 15, 19}; // Sorted array
+        int x = 8;
         System.out.println(obj.LowerBound(arr,x));
         System.out.println(obj.Recursion(arr,x,0,arr.length-1, arr.length));
     }
